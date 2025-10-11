@@ -8,8 +8,10 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts"
+    "build": "tsc",
+    "start": "node --enable-source-maps dist/index.js"
   },
+  "engines": { "node": ">=18.18" },
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "express-rate-limit": "^8.1.0",
