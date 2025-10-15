@@ -9,6 +9,9 @@ const app = express();
 // JSON body for normal API routes
 app.use("/api", express.json());
 
+app.get("/api/health", (req, res) => {
+  res.json({ ok: true, message: "Paymob service is running" });
+});
 // 1) Begin card checkout: returns { order_id, payment_key, iframe_url }
 app.post("/api/paymob/checkout/card", async (req, res) => {
   try {
