@@ -6,21 +6,6 @@
       "destination": "/api"
     }
   ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET,POST,PUT,DELETE"
-        }
-      ]
-    }
-  ],
   "functions": {
     "api/**/*.ts": {
       "runtime": "nodejs20.x"
