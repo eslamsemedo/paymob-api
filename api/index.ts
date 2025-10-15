@@ -1,8 +1,8 @@
 import "dotenv/config";
 import express from "express";
 import getRawBody from "raw-body";
-import { startCardCheckout } from "./paymobService.js";
-import { redirectionHandler, processedWebhookHandler } from "./webhook.js";
+import { startCardCheckout } from "./functions/paymobService.js";
+import { redirectionHandler, processedWebhookHandler } from "./functions/webhook.js";
 
 const app = express();
 
